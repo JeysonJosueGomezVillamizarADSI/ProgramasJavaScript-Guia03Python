@@ -1,15 +1,15 @@
-let cantidadGallinas=Number(prompt("Ingrese la cantidad de gallinas"));
-let cont=1;
-
-while (cont<=cantidadGallinas) {
-    let peso=Number(prompt("Ingrese el peso de la gallina"));
-    let altura=Number(prompt("Ingrese la altura de la gallina en cm"));
-    let numHuevo=Number(prompt("Ingrese el numero de huevos que pone la gallina"));
-
-    let calidad=(peso*altura)/numHuevo;
-    alert("La calidad del huevo que puso la gallina es de "+calidad);
-    let precio=calidad*1000;
-    alert("El precio de venta por cada kilo de huevo es"+precio);
-    cont+=1;
+let cont=0;
+while (cont<=10) {
+    let n1=Number(prompt("Escribe el primer numero: "))
+	let n2=Number(prompt("Escribe el segundo numero: "))
+	let sum=n1+n2
+	alert("El resultado de la suma es " +sum)
+	let rest=n1-n2
+	alert("El resultado de la resta es " +rest)
+	let mult=n1*n2
+	alert("El resultado de la multiplicacion es " +mult)
+	let div=n1/n2
+	alert("El resultado de la division es " +div)
+	cont+=1
 }
-alert("Programa Finalizado");
+alert("Fin del Programa")
