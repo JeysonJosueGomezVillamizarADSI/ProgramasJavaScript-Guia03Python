@@ -20,5 +20,4 @@ while (cont<=40) {
     }
     alert("La cantidad de alumnos que no tienen derecho al examen de nivelacion son : "+noTienenDerecho)
 }
-
-alert("Fin del Programa")
+alert("Fin del programa")
