@@ -1,17 +1,24 @@
-let numTrabajadores=Number(prompt("Ingresa el numero de trabajadores : "));
 let cont=1;
-let comision=0;
+let materiaFundamentos=Number(prompt("Digite los creditos de la materia fundamentos : "));
+let materiaBd=Number(prompt("Digite los creditos de la materia BD : "));
+let materiaEtica=Number(prompt("Digite los creditos de la materia Etica"));
+let cantidad=Number(prompt("Digite la cantidad de estudiantes"));
 
-while (cont<=numTrabajadores) {
-    let sueldo=Number(prompt("Ingrese el sueldo del trabajador : "));
-    let venta1= Number(prompt("Ingrese la primera venta : "));
-    let venta2=Number(prompt("Ingrese la segunda venta : "));
-    let venta3=Number(prompt("Ingrese la tercera venta : "));
+while (cont<=cantidad) {
+    let caliFundamentos=int(input('Digite la calificacion de la materia de fundamentos: '))
+    let caliBD=int(input('Digite la calificacion de la materia de BD: '))
+    let caliEtica=int(input('Digite la calificacion de la materia de etica: '))
 
-    comision=(venta1+venta2+venta3)*0.10;
+    let materia1=caliFundamentos*materiaFundamentos;
+    let materia2=caliBD*materiaBd;
+    let materia3=caliEtica*materiaEtica;
 
-    alert("El trabajador tiene un sueldo mensual de " + sueldo + "con una comision mensual de " + comision );
-    alert("El sueldo total mas la comision es de " + (sueldo+comision));
+    let sumaCreditos=materiaFundamentos+materiaBd+materiaEtica
+    let ponderacion(materia1+materia2+materia3)/sumaCreditos;
+
+    alert('Su promedio ponderado es de',ponderacion)
+
+    cont+=1;
 }
 
 alert("Programa Finalizado");
