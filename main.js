@@ -1,39 +1,26 @@
-let vehiculo=4;
-let turismo=0;
-let pert=0;
-let autobus=0;
-let camioneta=0;
-let motocicleta=0;
-let cont=1;
+let cont=1
 
-while (cont<=vehiculo) {
-    let tipoVehiculo=prompt("Ingrese el tipo de vehiculo que esta pasando (turismo, autobus, camion o motocicleta.: )");
+let cantidadVehi=Number(prompt("Ingrese la cantidad de vehiculos que ingresaron a bogota : "))
+while (cont<=cantidadVehi) {
+    let placa=Number(prompt("Digite el ultimo digito de la placa "))
+
+    if (placa==1 || placa==2) {
+        alert("La calcomania es amarilla")
+    }else if (placa==3 || placa==4) {
+        alert("La calcomania es rosa")
+    }
+    if(placa==5 || placa==6 ){
+        alert("La calcomania es roja")
+    }else if (placa==7 || placa==8) {
+        alert("La calcomania es verde")
+    }
+    if (placa==8 || placa==9) {
+        alert("La calcomania es azul")
+    }else{
+        alert("Error al digitar la placa")
+    }
+
     cont+=1
-
-    if (tipoVehiculo=='turismo'){
-
-        let per=int(input('Cantidad de personas: '))
-        turismo+=1
-        pert=per+pert}
-
-    if(tipoVehiculo=='autobus'){
-
-        autobus+=1}
-
-    if(tipoVehiculo=='camion'){
-
-        camioneta+=1}
-    
-    else{
-
-        motocicleta+=1}
 }
-alert('Cantidad de autobuses',aut)
-alert('Cantidad de camiones',cam)
-alert('Cantidad de motocicletas',mot)
-alert('Cantidad de turismo',tur)
-alert('Cantidad de personas en vehiculos de turismo',pert)
-
-
 
 alert("Programa Finalizado")
