@@ -1,23 +1,17 @@
-let noTienenDerecho=0;
-let cont=0;
+let segundos=0;
+let avion=222222;
+let misil=222222;
+let aceleracionAvion=20;
+let aceleracionMisil=10;
 
-while (cont<=40) {
-    let nt1 = Number(prompt("Digite la primera nota : "));
+while (aceleracionAvion-aceleracionMisil<=10000) {
+    aceleracionAvion+=20+aceleracionAvion;
+    aceleracionMisil+=10+aceleracionMisil;
+    segundos+=1
 
-    let nt2 = Number(prompt("Digite la segunda nota : "));
-
-    let nt3 = Number(prompt("Digite la tercera nota : "));
-
-    let nt4 = Number(prompt("Digita la cuarta nota : "));
-
-    let nt5 = Number(prompt("Digite la quinta nota : "));
-
-    let pro = (nt1 + nt2 + nt3 + nt4 + nt5) / 5;
-    cont += 1;
-
-    if (pro<=3) {
-        noTienenDerecho+=1;
-    }
-    alert("La cantidad de alumnos que no tienen derecho al examen de nivelacion son : "+noTienenDerecho)
+    alert ('segundo ' + segundos)
+    alert('distancia del avion ' +aceleracionAvion)
+    alert('distancia del misil ' +aceleracionMisil)
 }
-alert("Fin del programa")
+
+alert("Programa Finalizado");
